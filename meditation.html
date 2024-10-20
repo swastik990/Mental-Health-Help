@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/meditation.css">
+    <title>Meditation</title>
+</head>
+
+<body>
+
+    <nav>
+        <a href="home.html" class="logo">
+            <img src="Images/MHA.jpg" alt="Logo" class="logo-image">
+            <span>Mental Health Help</span> <!-- Wrapped in a span -->
+        </a>
+        <div class="links">
+            <a href="community.html">Community</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="professionals.html">Professionals</a>
+            <a href="meditation.html">Meditation</a>
+            <a href="feedback.html">Feedback!</a>
+        </div>
+    </nav>
+
+    <div class="main">
+        <h1>Meditation Videos</h1>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for meditation videos...">
+            <button id="filter-btn">Filter</button>
+        </div>
+    </div>
+
+    <div class="currently-playing">
+        <div class="video-container">
+            <video id="video-player" controls>
+                <source src="video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <h3 class="currently-playing-title" id="current-title">Meditation Session 1</h3>
+    </div>
+
+    <div class="video-list">
+        <h3>Other Videos</h3>
+        <div class="video-container">
+            <div class="video-item" onclick="changeVideo('video1.mp4', 'Meditation Session 1', 'thumbnail1.png')">
+                <img src="Images/meditate01.jpg" alt="Meditation Session 1">
+                <h4>Meditation Session 1</h4>
+            </div>
+            <div class="video-item" onclick="changeVideo('video2.mp4', 'Meditation Session 2', 'thumbnail2.png')">
+                <img src="Images/meditate2.jpg" alt="Meditation Session 2">
+                <h4>Meditation Session 2</h4>
+            </div>
+            <div class="video-item" onclick="changeVideo('video3.mp4', 'Meditation Session 3', 'thumbnail3.png')">
+                <img src="Images/meditate3.jpg" alt="Meditation Session 3">
+                <h4>Meditation Session 3</h4>
+            </div>
+            <div class="video-item" onclick="changeVideo('video4.mp4', 'Meditation Session 4', 'thumbnail4.png')">
+                <img src="Images/meditation4.jpg" alt="Meditation Session 4">
+                <h4>Meditation Session 4</h4>
+            </div>
+        </div>
+        <button class="view-more" onclick="viewMoreVideos()">View More</button>
+    </div>
+
+
+    
+
+    <footer>
+        <h3>Your Mental Health Matters</h3>
+        <div class="right">
+            <div class="links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Support</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="social">
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-facebook-square'></i>
+                <i class='bx bxl-github'></i>
+            </div>
+            <p>Copyright © 2024 Mental Health Help, All Rights Reserved by Swastik Ghimire.</p>
+        </div>
+    </footer>
+
+    <script src="js/meditation.js"></script>
+</body>
+
+</html>

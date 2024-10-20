@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/feedback.css">
+</head>
+<body>
+    <nav>
+        <a href="home.html" class="logo">
+            <img src="Images/MHA.jpg" alt="Logo" class="logo-image">
+            <span>Mental Health Help</span> <!-- Wrapped in a span -->
+        </a>
+        <div class="links">
+            <a href="community.html">Community</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="professionals.html">Professionals</a>
+            <a href="meditation.html">Meditation</a>
+            <a href="feedback.html">Feedback!</a>
+        </div>
+    </nav>
+
+    <div class="main">
+        <h1>Feedback</h1>
+        <div class="feedback-container">
+            <div class="stars">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <textarea id="feedback-message" rows="5" placeholder="Write your feedback here..."></textarea>
+            <button class="submit-btn" onclick="submitFeedback()">Submit Feedback</button>
+        </div>
+    </div>
+
+    <footer>
+            <h3>Your Mental Health Matters</h3>
+            <div class="right">
+                <div class="links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Support</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="social">
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-facebook-square'></i>
+                    <i class='bx bxl-github'></i>
+                </div>
+                <p>Copyright © 2024 Mental Health Help, All Rights Reserved by Swastik Ghimire.</p>
+            </div>
+        </footer>
+
+    <script src="js/feedback.js"></script>
+</body>
+</html>

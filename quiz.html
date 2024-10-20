@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/quiz.css">
+    <title>Mental Health Help</title>
+</head>
+
+<body>
+
+    <nav>
+        <a href="home.html" class="logo">
+            <img src="Images/MHA.jpg" alt="Logo" class="logo-image">
+            <span>Mental Health Help</span> <!-- Wrapped in a span -->
+        </a>
+        <div class="links">
+            <a href="community.html">Community</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="professionals.html">Professionals</a>
+            <a href="meditation.html">Meditation</a>
+            <a href="feedback.html">Feedback!</a>
+        </div>
+    </nav>
+
+    <div class="main">
+        <h1>Take a Quiz to Assess Your Mental Health</h1>
+        <p>Choose from a variety of quizzes to understand your emotional well-being.</p>
+    </div>
+
+    <div class="quiz-container">
+        <h1>How are you feeling today?</h1>
+        <div class="quiz-questions" id="quiz-container">
+            <div class="question-set" id="set1">
+                <div class="question">
+                    <h3>How often do you feel stressed?</h3>
+                    <label><input type="radio" name="q1" value="1"> Rarely</label>
+                    <label><input type="radio" name="q1" value="2"> Sometimes</label>
+                    <label><input type="radio" name="q1" value="3"> Often</label>
+                </div>
+                <div class="question">
+                    <h3>Do you find it hard to relax?</h3>
+                    <label><input type="radio" name="q2" value="1"> Yes</label>
+                    <label><input type="radio" name="q2" value="2"> Sometimes</label>
+                    <label><input type="radio" name="q2" value="3"> No</label>
+                </div>
+                <button onclick="nextSet(2)">Next</button>
+            </div>
+
+            <div class="question-set" id="set2" style="display:none;">
+                <div class="question">
+                    <h3>How often do you feel anxious?</h3>
+                    <label><input type="radio" name="q3" value="1"> Rarely</label>
+                    <label><input type="radio" name="q3" value="2"> Sometimes</label>
+                    <label><input type="radio" name="q3" value="3"> Often</label>
+                </div>
+                <div class="question">
+                    <h3>Do you avoid social situations due to anxiety?</h3>
+                    <label><input type="radio" name="q4" value="1"> Yes</label>
+                    <label><input type="radio" name="q4" value="2"> Sometimes</label>
+                    <label><input type="radio" name="q4" value="3"> No</label>
+                </div>
+                <button onclick="nextSet(3)">Next</button>
+            </div>
+
+            <div class="question-set" id="set3" style="display:none;">
+                <div class="question">
+                    <h3>How would you rate your emotional intelligence?</h3>
+                    <label><input type="radio" name="q5" value="1"> Low</label>
+                    <label><input type="radio" name="q5" value="2"> Moderate</label>
+                    <label><input type="radio" name="q5" value="3"> High</label>
+                </div>
+                <div class="question">
+                    <h3>Do you often reflect on your emotions?</h3>
+                    <label><input type="radio" name="q6" value="1"> Yes</label>
+                    <label><input type="radio" name="q6" value="2"> Sometimes</label>
+                    <label><input type="radio" name="q6" value="3"> No</label>
+                </div>
+                <button onclick="calculateResults()">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quiz-results">
+        <h2>Quiz Results</h2>
+        <div class="quiz" id="stress-quiz">
+            <img alt="Placeholder image for Stress quiz" src="Images/stress.jpg" />
+            <h3>Stress</h3>
+            <p>+2</p>
+            <div class="tags">
+                <span>High Stress</span>
+            </div>
+        </div>
+
+        <div class="quiz" id="anxiety-quiz">
+            <img alt="Placeholder image for Anxiety quiz" src="Images/anxiety.png" />
+            <h3>Anxiety</h3>
+            <p>-5</p>
+            <div class="tags">
+                <span>Low Anxiety</span>
+            </div>
+        </div>
+
+        <div class="quiz" id="emotional-intelligence-quiz">
+            <img alt="Placeholder image for Emotional Intelligence quiz" src="Images/emotion2.png" />
+            <h3>Emotional Intelligence</h3>
+            <p>-3</p>
+            <div class="tags">
+                <span>Moderate EQ</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="results" id="results" style="display:none;">
+        <h2>Your Results</h2>
+        <div class="result-cards" id="result-cards"></div>
+        <div class="graph-placeholder">
+            <img src="Images/emotiongraph.jpg" alt="Graph Placeholder">
+        </div>
+    </div>
+
+    <footer>
+        <h3>Your Mental Health Matters</h3>
+        <div class="right">
+            <div class="links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Support</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="social">
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-facebook-square'></i>
+                <i class='bx bxl-github'></i>
+            </div>
+            <p>Copyright © 2024 Mental Health Help, All Rights Reserved by Swastik Ghimire.</p>
+        </div>
+    </footer>
+
+    <script src="js/quiz.js"></script>
+</body>
+
+</html>
