@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+nav {
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center the items vertically */
+}
+
+.logo-image {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Keep it square for a rounded effect */
+    border-radius: 50%; /* Make the image rounded */
+    margin-right: 20px; /* Space between the logo and text */
+}
+
+nav a.logo {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    color: #333;
+    font-weight: 700;
+}
+
+nav .logo span {
+    margin-left: -10px; /* Adjust this value to move the text to the left */
+}
+
+nav .links {
+    display: flex;
+    gap: 20px;
+}
+
+nav .links a {
+    position: relative;
+    font-weight: 500;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+nav .links a:hover {
+    color: #ff5722;
+}
+
+.main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.main h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:#ff5722;
+}
+
+.main p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.professionals-container {
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px; /* Set max width for the container */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of professionals */
+    justify-content: space-around; /* Space around the professionals */
+}
+
+.professionals-container p{
+    padding-bottom: 10px;
+}
+.professional {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(45% - 20px); /* Responsive width */
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s; /* Transition for hover effect */
+}
+
+.professional img {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: make the images circular */
+    margin-bottom: 10px; /* Space between the image and text */
+}
+
+.professional:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.professional h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.professional p {
+    font-size: 14px;
+    color: #666;
+}
+
+.professional button {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.professional button:hover {
+    background-color: #007bff;
+}
+
+.view-more {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.view-more button {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.view-more button:hover {
+    background-color: #007bff; 
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 36px;
+}
+
+footer .links a {
+    color: #aaa;
+    margin: 0 10px;
+}
+
+footer .links a:hover {
+    color: #fff;
+}
+
+footer .social i {
+    font-size: 24px;
+    color: #ff5722;
+    margin: 0 10px;
+}

@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    object-fit: cover;
+}
+
+body {
+    background-color: #cbcbcb;
+}
+
+nav {
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    justify-content: space-evenly;
+}
+
+nav .logo {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center the items vertically */
+}
+
+.logo-image {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Keep it square for a rounded effect */
+    border-radius: 50%; /* Make the image rounded */
+    margin-right: 20px; /* Space between the logo and text */
+    margin-left: -200px;
+}
+
+nav a.logo {
+    align-items: center;
+    font-size: 28px;
+    color: #333;
+    font-weight: 700;
+}
+
+nav .logo span {
+    margin-left: -10px; /* Adjust this value to move the text to the left */
+}
+
+nav .links {
+    display: flex; /* Ensures links are in a row */
+    gap: 20px; /* Space between links */
+}
+
+nav .links a {
+    position: relative; /* Added for hover effect */
+    font-weight: 500;
+    padding: 5px 0; /* Padding for clickable area */
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+nav .links a:hover {
+    color: #22d3ff; /* Change text color on hover */
+}
+
+nav .links a::after {
+    content: ''; /* Create an underline effect */
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Position it below the text */
+    height: 2px; /* Height of the underline */
+    width: 100%; /* Full width */
+    background-color: #ff5722; /* Color of the underline */
+    transform: scaleX(0); /* Initially hidden */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+nav .links a:hover::after {
+    transform: scaleX(1); /* Show underline on hover */
+}
+
+
+header {
+    padding: 0 40px;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #fff, #f0f0f0);
+}
+
+header .left {
+    max-width: 600px;
+}
+
+header .left h1 {
+    font-size: 64px;
+    color: #333;
+}
+
+header .left h1 span {
+    color: #ff5722;
+}
+
+header .left p {
+    margin: 20px 0;
+    color: #666;
+}
+
+header .left a {
+    display: inline-flex;
+    align-items: center;
+    background: #ff5722;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+header {
+    padding: 20px; /* Adjust padding for better spacing */
+    height: auto; /* Allow height to adjust based on content */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center items */
+    background: linear-gradient(to right, #fff, #f0f0f0);
+}
+
+header img {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Keeps aspect ratio */
+    max-width: 600px; /* Limits the max size to avoid stretching on larger screens */
+    border-radius: 20px; /* Adds rounded corners */
+    margin-bottom: 20px; /* Adds space below the image */
+    margin-left: 20px;
+}
+
+img {
+    max-width: 100%; 
+    height: auto; 
+}
+ 
+
+.quiz-button {
+    display: inline-flex; /* Align icon and text */
+    align-items: center; /* Center vertically */
+    background-color: #007bff; /* Blue background */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 30px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    text-decoration: none; /* Remove underline */
+}
+
+.quiz-button:hover {
+    background-color: #00c3ff; /* Darker blue on hover */
+}
+
+.quiz-button i {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+header .left a span {
+    color: #fff;
+    margin-left: 10px;
+}
+
+body {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-bottom: 40px;
+}
+
+/* Resource Container */
+.resource-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.resource-box {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.resource-box:hover {
+    transform: translateY(-5px);
+}
+
+.resource-box h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.resource-box p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Articles */
+.article-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.article-box {
+    flex: 1 1 calc(50% - 20px);
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.article-box img {
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.article-box:hover {
+    transform: translateY(-5px);
+}
+
+.article-info {
+    padding: 20px;
+}
+
+.article-info h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.article-info p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.article-info a {
+    color: #0f2182;
+    text-decoration: none;
+}
+
+.article-info a:hover {
+    text-decoration: underline;
+}
+
+.view-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.view-more button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-more button:hover {
+    background-color: #00c3ff;
+}
+
+/* Professionals */
+.professional-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.professional-box {
+    flex: 1 1 calc(25% - 20px);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.professional-box:hover {
+    transform: translateY(-5px);
+}
+
+.professional-box h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.professional-box p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 36px;
+}
+
+footer .links a {
+    color: #aaa;
+    margin: 0 10px;
+}
+
+footer .links a:hover {
+    color: #fff;
+}
+
+footer .social i {
+    font-size: 24px;
+    color: #ff5722;
+    margin: 0 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stacks items vertically */
+        align-items: center; /* Center align for mobile */
+        text-align: center; /* Center text for mobile */
+    }
+}
+
+/* Media Queries */
+
+/* For screens up to 768px */
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 0 20px; 
+    }
+
+    nav .links {
+        gap: 10px; 
+    }
+
+    header {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    header .left h1 {
+        font-size: 36px; 
+    }
+
+    header .left {
+        max-width: 100%; 
+        text-align: center; /* Center text in the header */
+    }
+
+    header img {
+        margin: 20px 0; /* Adds space above and below the image */
+    }
+
+    .professional-box {
+        flex: 1 1 calc(100% - 20px); 
+    }
+
+    .resource-box {
+        flex: 1 1 calc(100% - 20px); /* Make resource boxes stack */
+    }
+}
+
+/* For screens up to 576px */
+@media screen and (max-width: 576px) {
+    nav {
+        flex-direction: column; 
+        height: auto; 
+    }
+
+    nav a.logo {
+        font-size: 24px; 
+    }
+
+    .resource-container {
+        flex-direction: column; 
+    }
+
+    header .left h1 {
+        font-size: 28px; 
+    }
+
+    header .left a {
+        padding: 8px 16px; 
+        font-size: 14px; 
+    }
+
+    footer h3 {
+        font-size: 24px; 
+    }
+
+    footer .links a {
+        font-size: 14px; /* Reduce footer link size */
+    }
+
+    footer .social i {
+        font-size: 20px; /* Reduce social icon size */
+    }
+}

@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    object-fit: cover;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+nav {
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center the items vertically */
+}
+
+.logo-image {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Keep it square for a rounded effect */
+    border-radius: 50%; /* Make the image rounded */
+    margin-right: 20px; /* Space between the logo and text */
+}
+
+nav a.logo {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    color: #333;
+    font-weight: 700;
+}
+
+nav .logo span {
+    margin-left: -10px; /* Adjust this value to move the text to the left */
+}
+
+nav .links {
+    display: flex;
+    gap: 20px;
+}
+
+nav .links a {
+    position: relative;
+    font-weight: 500;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+nav .links a:hover {
+    color: #ff5722;
+}
+
+nav .links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 100%;
+    background-color: #ff5722;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav .links a:hover::after {
+    transform: scaleX(1);
+}
+
+
+header {
+    padding: 0 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 48px;
+    color: #ff5722;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.community-stories, .personal-stories {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(70% - 40px);
+    margin: 10px;
+}
+
+.personal-stories {
+    width: calc(25% - 40px);
+}
+
+h2 {
+    color: #ff5722;
+}
+
+article {
+    margin-bottom: 15px;
+}
+
+article h3 {
+    margin: 10px 0 5px;
+}
+
+.story-image {
+    width: 10%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #00c3ff;
+}
+
+.view-more {
+    background: none; /* No background color */
+    color: #007bff; /* Change to your preferred color */
+    border: none; /* No border */
+    padding: 0; /* Remove padding */
+    text-decoration: underline; /* Underline text */
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 16px; /* Adjust font size */
+    margin-top: 20px; /* Space from the content above */
+    display: block; /* Makes it a block element */
+    text-align: right; /* Align text to the right */
+}
+
+.community-stories {
+    position: relative; /* Enable positioning context */
+}
+
+.community-stories .view-more {
+    position: absolute; /* Position it absolutely within the parent */
+    bottom: 20px; /* Adjust as needed for spacing */
+    right: 20px; /* Adjust as needed for spacing */
+}
+
+.personal-stories {
+    position: relative; /* Enable positioning context */
+}
+
+.personal-stories .view-more {
+    position: absolute; /* Position it absolutely within the parent */
+    bottom: 20px; /* Adjust as needed for spacing */
+    right: 20px; /* Adjust as needed for spacing */
+}
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 36px;
+}
+
+footer .links a {
+    color: #aaa;
+    margin: 0 10px;
+}
+
+footer .links a:hover {
+    color: #fff;
+}
+
+footer .social i {
+    font-size: 24px;
+    color: #ff5722;
+    margin: 0 10px;
+}
+
+/* Media Queries */
+
+/* For screens up to 1200px */
+@media screen and (max-width: 1200px) {
+    header h1 {
+        font-size: 40px; /* Adjust header font size */
+    }
+
+    footer h3 {
+        font-size: 30px; /* Adjust footer heading size */
+    }
+}
+
+/* For screens up to 768px */
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 0 20px; /* Adjust padding for nav */
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center; /* Center items */
+    }
+
+    nav .logo {
+        margin-bottom: 10px; /* Space between logo and links */
+    }
+
+    header h1 {
+        font-size: 36px; /* Adjust header font size */
+        margin: 20px 0; /* Space above and below header */
+    }
+
+    nav .links {
+        gap: 10px; /* Reduce gap between links */
+    }
+
+    .community-stories, .personal-stories {
+        width: 100%; /* Stack stories full width */
+        margin: 10px 0; /* Margin adjustment */
+    }
+
+    .personal-stories {
+        width: 100%; /* Personal stories full width */
+    }
+
+    button {
+        width: 100%; /* Make buttons full-width */
+        padding: 12px; /* Adjust padding */
+    }
+}
+
+/* For screens up to 480px */
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 24px; /* Adjust header font size for small screens */
+        margin: 10px 0; /* Space above and below header */
+    }
+
+    button {
+        padding: 10px; /* Adjust padding for smaller screens */
+        font-size: 16px; /* Adjust button font size */
+    }
+
+    .community-stories, .personal-stories {
+        padding: 15px; /* Reduce padding inside stories */
+    }
+}
