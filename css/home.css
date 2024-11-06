@@ -395,6 +395,16 @@ footer .social i {
         margin: 20px 0; /* Adds space above and below the image */
     }
 
+    .article-box, .professional-box {
+        flex: 1 1 100%; /* Stack articles and professionals vertically */
+        max-width: 100%;
+    }
+
+    .article-box img, .professional-box img {
+        width: 60px;
+        height: 60px; /* Adjust image size for smaller screens */
+    }
+
     .professional-box {
         flex: 1 1 calc(100% - 20px); 
     }
