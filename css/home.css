@@ -42,7 +42,6 @@ nav .logo {
     height: 50px; /* Keep it square for a rounded effect */
     border-radius: 50%; /* Make the image rounded */
     margin-right: 20px; /* Space between the logo and text */
-    margin-left: -200px;
 }
 
 nav a.logo {
@@ -99,6 +98,7 @@ header {
 }
 
 header .left {
+    padding-right: 20px;
     max-width: 600px;
 }
 
@@ -135,12 +135,14 @@ header {
 }
 
 header img {
+    
     width: 100%; /* Makes the image responsive */
     height: auto; /* Keeps aspect ratio */
     max-width: 600px; /* Limits the max size to avoid stretching on larger screens */
     border-radius: 20px; /* Adds rounded corners */
     margin-bottom: 20px; /* Adds space below the image */
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 img {
@@ -374,7 +376,21 @@ footer .social i {
     }
 
     nav .links {
-        gap: 10px; 
+        display:contents;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #f3f3f3;
+        padding: 10px 0;
+        text-align: center;
+        border-top: 1px solid #ddd;
+    }
+
+    .links a {
+        padding: 10px 0;
+        display: block;
     }
 
     header {
