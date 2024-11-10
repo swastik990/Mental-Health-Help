@@ -14,7 +14,7 @@
     <nav>
         <a href="index.html" class="logo">
             <img src="Images/MHA.jpg" alt="Logo" class="logo-image">
-            <span>Mental Health Help</span> <!-- Wrapped in a span -->
+            <span>Mental Health Help</span>
         </a>
         <div class="links">
             <a href="community.html">Community</a>
@@ -35,39 +35,36 @@
 
     <div class="currently-playing">
         <div class="video-container">
-            <video id="video-player" controls>
-                <source src="video1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <!-- Updated video embed URL with only the video ID -->
+            <iframe id="video-player" width="560" height="315" src="https://www.youtube.com/embed/inpok4MKVLM"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
-        <h3 class="currently-playing-title" id="current-title">Meditation Session 1</h3>
+        <h3 class="currently-playing-title" id="current-title">5-Minute Meditation You Can Do Anywhere</h3>
     </div>
 
     <div class="video-list">
         <h3>Other Videos</h3>
         <div class="video-container">
-            <div class="video-item" onclick="changeVideo('video1.mp4', 'Meditation Session 1', 'thumbnail1.png')">
+            <!-- Replace `VIDEO_ID1`, `VIDEO_ID2`, etc., with actual YouTube video IDs -->
+            <div class="video-item" onclick="changeVideo('https://www.youtube.com/embed/inpok4MKVLM', '5-Minute Meditation You Can Do Anywhere')">
                 <img src="Images/meditate01.jpg" alt="Meditation Session 1">
-                <h4>Meditation Session 1</h4>
+                <h4>5-Minute Meditation You Can Do Anywhere</h4>
             </div>
-            <div class="video-item" onclick="changeVideo('video2.mp4', 'Meditation Session 2', 'thumbnail2.png')">
+            <div class="video-item" onclick="changeVideo('https://www.youtube.com/embed/q0DMYs4b2Yw', 'How Does Meditation Change the Brain?')">
                 <img src="Images/meditate2.jpg" alt="Meditation Session 2">
-                <h4>Meditation Session 2</h4>
+                <h4>How Does Meditation Change the Brain?</h4>
             </div>
-            <div class="video-item" onclick="changeVideo('video3.mp4', 'Meditation Session 3', 'thumbnail3.png')">
+            <div class="video-item" onclick="changeVideo('https://www.youtube.com/embed/Hzi3PDz1AWU', 'How to Meditate for Beginners?')">
                 <img src="Images/meditate3.jpg" alt="Meditation Session 3">
-                <h4>Meditation Session 3</h4>
+                <h4>'How to Meditate' for Beginners</h4>
             </div>
-            <div class="video-item" onclick="changeVideo('video4.mp4', 'Meditation Session 4', 'thumbnail4.png')">
+            <div class="video-item" onclick="changeVideo('https://www.youtube.com/embed/mZxcw2rPWxU', 'Guided Meditation Session')">
                 <img src="Images/meditation4.jpg" alt="Meditation Session 4">
-                <h4>Meditation Session 4</h4>
+                <h4>Guided Meditation Session</h4>
             </div>
         </div>
         <button class="view-more" onclick="viewMoreVideos()">View More</button>
     </div>
-
-
-    
 
     <footer>
         <h3>Your Mental Health Matters</h3>
@@ -85,7 +82,7 @@
             <p>Copyright © 2024 Mental Health Help, All Rights Reserved by Swastik Ghimire.</p>
         </div>
     </footer>
-
+    
     <script src="js/meditation.js"></script>
 </body>
 
