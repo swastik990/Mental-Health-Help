@@ -87,6 +87,19 @@ nav .links a:hover::after {
 }
 
 
+.quiz-title {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f0f8ff;
+}
+
+.quiz-title h2 {
+    font-size: 2rem;
+    color: #ff5722;
+}
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Lato:wght@400;700&display=swap');
 
 
@@ -98,7 +111,7 @@ nav .links a:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     padding: 20px;
     background: url("./assets/img/carbon.jpg");
     background-size: cover;
@@ -221,4 +234,18 @@ footer .social i {
     font-size: 24px;
     color: #ff5722;
     margin: 0 10px;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .quiz-title h2 {
+        font-size: 1.5rem;
+    }
+
+    nav .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
